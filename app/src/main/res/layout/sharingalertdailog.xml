@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Sharing Type"
+        android:inputType="number"
+        android:id="@+id/sharingType_hostel"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Rooms Count"
+        android:inputType="number"
+        android:id="@+id/rooms_hostel"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price Per month"
+        android:inputType="number"
+        android:id="@+id/pricepermonth_hostel"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price Per day"
+        android:inputType="number"
+        android:id="@+id/priceperday_hostel"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Omnispace Price"
+        android:inputType="number"
+        android:id="@+id/omnispaceprice_hostel"/>
+</LinearLayout>

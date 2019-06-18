@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearone">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listname"
+        android:text="name : "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nametxthostel"
+        android:text="hostel"
+        android:layout_marginLeft="5dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/listphn"
+    android:text="phone number :"
+    android:layout_marginLeft="10dp"
+   />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/phnnum"
+    android:text="12345"
+    android:layout_marginLeft="5dp"
+
+/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lener2"
+        android:layout_marginTop="40dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listloc"
+        android:text="Loaction :"
+      />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/txtLoactionhstl"
+    android:text="benzcircle"
+    android:layout_marginLeft="5dp"
+
+   />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txaction"
+            android:text="Action :"
+            android:layout_marginLeft="40dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/mainIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>

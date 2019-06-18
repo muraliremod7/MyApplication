@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.omnispace.marketing">
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <receiver
+            android:name=".mfs.bootupreciever"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyArOviEzSnBw3P-kEhxIuFfv78Pf386NeY"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.SplashScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.omnispace.marketing.Activities.LoginActivity"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.TargetsActivity"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.HostelActivity">
+
+        </activity>
+        <activity
+            android:name="com.omnispace.marketing.Activities.InstitutesActivity">
+
+        </activity>
+        <activity android:name=".mfs.MFS100_final"
+            android:theme="@style/AppDialogTheme"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.GymsActivity"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.DataActivity"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.HostelListActivity"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.RejectedActivity"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.PendingActivity"/>
+
+        <activity
+            android:name="com.omnispace.marketing.Activities.CompletedActivity"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.CsActivity"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.PersonalLeadsActivity"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.InstitutesListActivity"/>
+        <activity
+            android:name="com.omnispace.marketing.Activities.GymsListActivity"/>
+        <service
+            android:name="com.omnispace.marketing.services.GetAddressIntentService"
+            android:exported="false"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.omnispace.marketing.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+
+</manifest>

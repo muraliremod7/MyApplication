@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear1">
+            <Button
+                android:visibility="gone"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/takefingerdata_hostel"
+                android:text="Capture Fingers"
+                android:background="@color/colorAccent"
+                android:textColor="@color/textColorPrimary"
+                android:layout_gravity="center" />
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel_name"
+                android:hint="Name of the Hostel"
+                android:autofillHints="hstl name"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel_gst"
+                android:hint="GST of the Hostel"
+                android:inputType="text"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel_owner_name"
+                android:hint="Name of the owner"
+                android:inputType="textPersonName"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel_owner_contact"
+                android:hint="Conatct Number Of Owner"
+                android:inputType="phone"/>
+            <EditText
+                android:hint="Email of the owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel_owner_email"
+                android:inputType="textEmailAddress"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel_owner_aadhar"
+                android:hint="Aadhar Number of the Owner"
+                android:inputType="number"
+                android:maxLength="12"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_hostel"
+                android:hint="Contact Number of Hostel"
+                android:inputType="phone" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel_address"
+                android:hint="Hostel Address"
+                android:inputType="text"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Amenities"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WIFI"
+                    android:id="@+id/hostel_wifi"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TV"
+                    android:id="@+id/hostel_tv"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:id="@+id/hostel_food"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Washing Machine"
+                    android:id="@+id/hostel_washingmachine"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Hostel Type"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mens Hostel"
+                    android:id="@+id/hostel_menshostel"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Womens Hostel"
+                    android:id="@+id/hostel_womenshostel"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Both"
+                    android:id="@+id/hostel_bothhostel"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Location"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/hostel_state"
+                android:hint="Hostel State" />
+            <EditText
+                android:id="@+id/hostel_place"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Hostel City"/>
+            <EditText
+                android:id="@+id/hostel_location"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                 android:hint="Hostel Place"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BANK DETAILS :"
+                android:gravity="center"
+                android:id="@+id/txtbankdetails"/>
+
+            <EditText
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel_bankname"
+                android:hint="Bank Name"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel_accnumber"
+                android:hint="Account Number"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel_ifsc"
+                android:inputType="text"
+                android:hint="IFSC Code"
+                android:textAllCaps="true"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AC ROOMS:"
+                    android:id="@+id/txtAcroom"/>
+                <ImageView
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:background="@color/colorAccent"
+                    android:tint="@color/textColorPrimary"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:id="@+id/hostel_ac_addsharing" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_weight="1"
+                    android:id="@+id/hostel_acone_sharing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 Sharing"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:id="@+id/hostel_actwo_sharing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2 Sharing"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:id="@+id/hostel_acthree_sharing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3 Sharing"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NON-AC ROOMS:" />
+                <ImageView
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:background="@color/colorAccent"
+                    android:tint="@color/textColorPrimary"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:id="@+id/hostel_nonac_addsharing" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_weight="1"
+                    android:id="@+id/hostel_nonacone_sharing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 Sharing"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:id="@+id/hostel_nonactwo_sharing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2 Sharing"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:id="@+id/hostel_nonacthree_sharing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3 Sharing"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documentation" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Capture Hostel Photos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:drawableTint="@color/textColorPrimary"
+                    android:drawableRight="@drawable/ic_add_black_24dp"
+                    android:layout_weight="1"
+                    android:paddingRight="20dp"
+                    android:id="@+id/hostel_Add_Pictures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Pictures"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/textColorPrimary"/>
+            </LinearLayout>
+            <Button
+                android:layout_marginTop="10dp"
+                android:drawableTint="@color/textColorPrimary"
+                android:drawableRight="@drawable/ic_add_black_24dp"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:id="@+id/hostel_upload_extra_addressproof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Extra Proofs"
+                android:background="@color/colorAccent"
+                android:textColor="@color/textColorPrimary"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:drawableTint="@color/textColorPrimary"
+                android:drawableRight="@drawable/ic_add_black_24dp"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:id="@+id/hostel_upload_documents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Documents"
+                android:background="@color/colorAccent"
+                android:textColor="@color/textColorPrimary"/>
+
+        </LinearLayout>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="OS Fees Per day"
+            android:inputType="number"
+            android:id="@+id/hostel_os_fees_day"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="OS Fees per month"
+            android:inputType="number"
+            android:id="@+id/hostel_os_fees_month"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/hosteldata_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textColorPrimary"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
